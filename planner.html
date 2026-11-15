@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Planner | Williams Emoyon Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="logo">Williams Emoyon</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="planner.html" class="active">Planner</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="page-header">
+      <h1>Interactive Student Planner</h1>
+      <p>Organize your CSC 106 assignments, study goals, and daily tasks.</p>
+    </section>
+
+    <section class="planner-card">
+      <form id="task-form" class="planner-form">
+        <input
+          type="text"
+          id="task-input"
+          placeholder="Add a new assignment or task..."
+          required
+        />
+        <select id="task-category">
+          <option value="Coursework">Coursework</option>
+          <option value="Coding">Coding</option>
+          <option value="Personal">Personal</option>
+        </select>
+        <button type="submit" class="btn primary">Add Task</button>
+      </form>
+
+      <ul id="task-list" class="task-list"></ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Williams Emoyon | CSC 106 Student Portfolio</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

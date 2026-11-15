@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Williams Emoyon Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="logo">Williams Emoyon</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="planner.html">Planner</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="page-header">
+      <h1>Get In Touch</h1>
+      <p>Have a question about my coursework or want to collaborate? Send a message below.</p>
+    </section>
+
+    <div class="contact-grid">
+      <section class="contact-info-card">
+        <h2>Contact Details</h2>
+        <p>Feel free to reach out directly via email or check out my code repositories.</p>
+        <ul class="contact-details-list">
+          <li><strong>Email:</strong> emoyonwilliams@gmail.com</li>
+          <li><strong>GitHub:</strong> github.com/emoyonwilliams</li>
+          <li><strong>Location:</strong> Lagos, Nigeria</li>
+        </ul>
+      </section>
+
+      <section class="contact-form-card">
+        <form id="contact-form" class="contact-form">
+          <div class="form-group">
+            <label for="sender-name">Full Name</label>
+            <input type="text" id="sender-name" placeholder="Your name" required />
+          </div>
+          <div class="form-group">
+            <label for="sender-email">Email Address</label>
+            <input type="email" id="sender-email" placeholder="you@example.com" required />
+          </div>
+          <div class="form-group">
+            <label for="sender-message">Message</label>
+            <textarea id="sender-message" rows="4" placeholder="Write your message..." required></textarea>
+          </div>
+          <button type="submit" class="btn primary">Send Message</button>
+          <p id="form-status" class="form-status"></p>
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Williams Emoyon | CSC 106 Student Portfolio</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
